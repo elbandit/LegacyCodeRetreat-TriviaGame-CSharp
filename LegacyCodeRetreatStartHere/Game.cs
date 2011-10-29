@@ -28,15 +28,18 @@ namespace com.adaptionsoft.games.trivia
     	}
 		}
 		
-		public string CreateRockQuestion(int index){
+		public string CreateRockQuestion(int index)
+		{
 			return "Rock Question " + index;
 		}
 		
-		public bool IsPlayable() {
+		public bool IsPlayable() 
+		{
 			return (HowManyPlayers() >= 2);
 		}
 		
-		public bool Add(String playerName) {
+		public bool Add(String playerName) 
+		{
 			
 			
 		    players.Add(playerName);
@@ -49,16 +52,20 @@ namespace com.adaptionsoft.games.trivia
 			return true;
 		}
 		
-		public int HowManyPlayers() {
+		public int HowManyPlayers() 
+		{
 			return players.Count;
 		}
 		
-		public void Roll(int roll) {
+		public void Roll(int roll) 
+		{
 			Console.WriteLine(players[currentPlayer] + " is the current player");
 			Console.WriteLine("They have rolled a " + roll);
 			
-			if (inPenaltyBox[currentPlayer]) {
-				if (roll % 2 != 0) {
+			if (inPenaltyBox[currentPlayer]) 
+			{
+				if (roll % 2 != 0) 
+				{
 					isGettingOutOfPenaltyBox = true;
 					
 					Console.WriteLine(players[currentPlayer] + " is getting out of the penalty box");
@@ -70,12 +77,16 @@ namespace com.adaptionsoft.games.trivia
 							+ places[currentPlayer]);
 					Console.WriteLine("The category is " + CurrentCategory());
 					AskQuestion();
-				} else {
+				} 
+				else 
+				{
 					Console.WriteLine(players[currentPlayer] + " is not getting out of the penalty box");
 					isGettingOutOfPenaltyBox = false;
 					}
 				
-			} else {
+			} 
+			else 
+			{
 			
 				places[currentPlayer] = places[currentPlayer] + roll;
 				if (places[currentPlayer] > 11) places[currentPlayer] = places[currentPlayer] - 12;
@@ -187,4 +198,3 @@ namespace com.adaptionsoft.games.trivia
 		}
 	}
 }
-
