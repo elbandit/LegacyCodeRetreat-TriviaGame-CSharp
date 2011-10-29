@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyCodeRetreatStartHere", "LegacyCodeRetreatStartHere\LegacyCodeRetreatStartHere.csproj", "{F5A3EEB0-F7E3-4DC6-8ADD-FE217ADBEBE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5A3EEB0-F7E3-4DC6-8ADD-FE217ADBEBE8}.Debug|x86.ActiveCfg = Debug|x86
+		{F5A3EEB0-F7E3-4DC6-8ADD-FE217ADBEBE8}.Debug|x86.Build.0 = Debug|x86
+		{F5A3EEB0-F7E3-4DC6-8ADD-FE217ADBEBE8}.Release|x86.ActiveCfg = Release|x86
+		{F5A3EEB0-F7E3-4DC6-8ADD-FE217ADBEBE8}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = LegacyCodeRetreatStartHere\LegacyCodeRetreatStartHere.csproj
+	EndGlobalSection
+EndGlobal
