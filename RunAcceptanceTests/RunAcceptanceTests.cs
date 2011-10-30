@@ -12,12 +12,13 @@ namespace RunAcceptanceTests
 		{
 			var realStandardOut = Console.Out;
 			
-			Directory.CreateDirectory("acceptance/masters");
+			var testRunDirectoryName = string.Format("acceptance/{0:yyyyMMddHHmmssffff}", DateTime.Now);
+			Directory.CreateDirectory(testRunDirectoryName);
 				
 			try {
 				for (int i = 0; i < 10000; i++) 
 				{
-					var writeToFile = new StreamWriter(string.Format("acceptance/masters/{0:0000}.txt", i));
+					var writeToFile = new StreamWriter(string.Format("{1}/{0:0000}.txt", i, testRunDirectoryName));
 					Console.SetOut(writeToFile);
 					
 					Game aGame = new Game();
